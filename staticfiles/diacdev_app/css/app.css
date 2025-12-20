@@ -1,0 +1,76 @@
+/* ------------------------------------
+   GLOBAL / RESET
+------------------------------------ */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;      /* 1rem = 10px */
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root{
+  --reset-size: 16px;
+}
+
+/* 
+
+BODY
+
+*/
+
+body{
+  padding: 0;
+  margin: 0;
+  font-size: var(--reset-size);
+  font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 
+
+HEADER
+
+*/
+
+header{
+  width: 100%;
+  background: black;
+  color: white;
+  font-size: var(--reset-size);
+  display: flex;
+  justify-content: center;
+}
+
+.image__logo{
+  max-width: 5rem;
+  max-height: 5rem;
+}
+
+.header__contain{
+  max-width: 120rem;
+  width: 100%;
+  max-height: 10rem;
+  display: flex;  
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.navbar a{
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}

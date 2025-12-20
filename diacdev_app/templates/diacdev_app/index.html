@@ -1,0 +1,36 @@
+{% extends 'diacdev_app/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="main__container">
+    <section class="profile__section">
+        <h1>daniel ignacio araya castillo</h1>
+        <div class="profile">
+            <div class="profile__image">
+                <img src="{% static 'diacdev_app/images/profile.png' %}" alt="foto perfil">
+            </div>
+            <div class="profil__description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam et ipsum dolores molestias magnam
+                    voluptates facere!
+                    Quod ea dolorem, recusandae, distinctio hic vel, ducimus nam pariatur omnis iure asperiores ipsum.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Proyectos</h2>
+        <div class="cards">
+            {% for card in cards %}
+            <div class="card">
+                <img src="#" alt="{{ card.title }}">
+                <h3>{{ card.title }}</h3>
+                <p>{{ card.text }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</div>
+
+{% endblock %}
