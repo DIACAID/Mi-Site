@@ -16,9 +16,10 @@ html {
 
 :root{
   /* GENERAL SETTINGS */
-  --reset-size: 16px;
+  --reset-size: 2rem;
+  --header-height: 10rem;
   /* COLORS */
-  --ligth-color: #87CEEB;
+  --ligth-color: #035bffa9;
   --dark-color: #2B3A67;
   --font-color: #ffe135;  
   --second-font: #222222; 
@@ -26,19 +27,23 @@ html {
   --white-font: #e9e9e9; 
 
 }
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  color: inherit;
+}
+li, ul, ol{
+  list-style: none;
+}
 
 /* 
 
 BODY
 
 */
-h1{
-  transform: skew(-10deg);
-  text-transform: uppercase;
-}
-li, ul, ol{
-  list-style: none;
-}
 
 body{
   padding: 0;
@@ -47,10 +52,7 @@ body{
   font-family:'Montserrat', sans-serif;
   background: var(--ligth-color);
 }
-.profile{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
+
 .cards{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -60,21 +62,41 @@ body{
   background-color: #222222;
   border-radius: 1rem;
 }
-a {
-  text-decoration: none;
-  color: inherit;
+.header__contain a{
   gap: 3rem;
+  text-decoration: none;
 }
-.perfil__image{
-  display: grid;
-  justify-content: center;
-}
+
 .profile__section{
-  padding-top: 10rem
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 0;  
+}
+.profile__image{
+  max-width: 28rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile__image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile__description{
+  padding: 0 6rem ;
+}
+.profile__contact{
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
 }
 .main__container{
   margin: 0 auto;
   max-width: 120rem;
+  padding-top: var(--header-height);
 }
 
 /* 
@@ -100,6 +122,14 @@ header{
   
 }
 
+.header__contain{
+  max-width: 120rem;
+  width: 100%;
+  min-height: 6rem;
+  display: flex;  
+  justify-content: space-between;
+  margin: 1rem;
+}
 .image__logo{
   max-width: 6rem;
   max-height: 6rem;
@@ -108,16 +138,6 @@ header{
 .image__logo:hover{
   cursor: pointer;
 }
-
-.header__contain{
-  max-width: 120rem;
-  width: 100%;
-  max-height: 8rem;
-  display: flex;  
-  justify-content: space-between;
-  padding: 3rem;
-}
-
 .navbar{
   display: flex;
   flex-direction: row;
