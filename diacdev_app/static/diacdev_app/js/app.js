@@ -1,3 +1,7 @@
+/* ------------------
+  DARK / LIGHT MODE
+-------------------*/
+
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("theme-toggle");
 
@@ -12,3 +16,5 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.setAttribute("data-theme", newTheme);
   });
 });
+
+/* --------------- */

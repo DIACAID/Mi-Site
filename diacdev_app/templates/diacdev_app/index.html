@@ -28,21 +28,25 @@
 
         </div>
         <div class="profile__name">
-            <h3>Daniel Ignacio Araya Castillo</h3>
+            <h2>Daniel Ignacio Araya Castillo</h2>
         </div>
         <div class="profile__description">
             <p class="description">
-                <span class="profile__way">
-                    Full Stack Web Developer.<br>
+                <span class="profile-way">
+                    Full Stack Web Developer<br>
                 </span>
-                Preferencia para entregar calidad y escalabilidad en codigo. <br>
-                Enfoque y constante estudio en desarrollo web,contando con conocimientos en tecnologias de desarrollo FrontEnd como tambien Backend.
-            </p>
+                Enfoque y constante estudio en el area para brindar calidad, escalabilidad y mantenibilidad 
+                en aplicaciones web. <br>
+                <span class="profile-learn">
+                    En continuo aprendizaje.
+                </span>
+
         </div>
     </section>
-    <section>
+    <hr>
+    <section class="proyects__section">
         <h2>Proyectos</h2>
-        <div class="cards">
+        <div class="proyects">
             {% for card in cards %}
             <div class="card">
                 <img src="#" alt="{{ card.title }}">
@@ -52,8 +56,8 @@
             {% endfor %}
         </div>
     </section>
-    <section>
-
+    <section class="skills-section">
+        
     </section>
 </div>
 

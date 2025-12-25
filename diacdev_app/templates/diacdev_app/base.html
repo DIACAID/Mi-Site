@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="{% static 'diacdev_app/css/app.css' %}">
 
 </head>
-
+<img class="image__logo" src="{% static 'diacdev_app/images/favicon.png' %}" alt="diacdev_logo"
+    onclick="">
 <body>
     <header>
-
         <div class="header__contain">
             <div class="navbar__logo">
-                <img class="image__logo" src="{% static 'diacdev_app/images/favicon.png' %}" alt="diacdev_logo"
-                    onclick="">
+                <a href=""> DIAC-DEV </a>
             </div>
             <nav class="navbar">
                 <a href="#">Presentación</a>
@@ -35,5 +34,12 @@
 
     <script src="{% static 'diacdev_app/js/app.js' %} " defer></script>
 </body>
-
+<hr>
+<footer>
+    <p></p>
+</footer>
+    <p class="footer__description">
+        © Daniel Ignacio Araya Castillo. Todos los derechos reservados. <br>
+        Desarrollado con Django, HTML, CSS y JS
+    </p>
 </html>
