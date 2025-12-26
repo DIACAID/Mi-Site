@@ -5,23 +5,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Portafolio DIACDEV">
+    <title>Danial AC | Web Developer</title>
     <link rel="stylesheet" href="{% static 'diacdev_app/css/app.css' %}">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<img class="image__logo" src="{% static 'diacdev_app/images/favicon.png' %}" alt="diacdev_logo"
-    onclick="">
 <body>
     <header>
         <div class="header__contain">
             <div class="navbar__logo">
-                <a href=""> DIAC-DEV </a>
-            </div>
+                <a href="" name="diavdev_index"> DIAC-DEV </a>
+            </div>  
             <nav class="navbar">
-                <a href="#">Presentación</a>
-                <a href="#">Habilidades</a>
-                <a href="#">Contacto</a>
-                <a href="#">Proyectos</a>
+                <a href="#" aria-label="presentation">Presentación</a>
+                <a href="#" aria-label="skills">Habilidades</a>
+                <a href="#" aria-label="contact">Contacto</a>
+                <a href="#" aria-label="proyects">Proyectos</a>
                 <button id="theme-toggle" aria-label="Toggle theme">Toggle theme</button>
             </nav>
         </div>
@@ -38,8 +38,9 @@
 <footer>
     <p></p>
 </footer>
-    <p class="footer__description">
-        © Daniel Ignacio Araya Castillo. Todos los derechos reservados. <br>
-        Desarrollado con Django, HTML, CSS y JS
-    </p>
+<p class="footer__description">
+    © Daniel Ignacio Araya Castillo. Todos los derechos reservados. <br>
+    Desarrollado con Django, HTML, CSS y JS
+</p>
+
 </html>
