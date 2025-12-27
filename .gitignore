@@ -1,0 +1,64 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+*.egg-info/
+dist/
+build/
+
+# ======================
+# Virtual environment
+# ======================
+venv/
+.venv/
+env/
+ENV/
+
+# ======================
+# Django
+# ======================
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# ======================
+# Static files (production)
+# ======================
+staticfiles/
+
+# ======================
+# Migrations (optional)
+# ======================
+# Uncomment if you don't want migrations in git
+# migrations/
+
+# ======================
+# Environment variables
+# ======================
+.env
+.env.*
+
+# ======================
+# IDE / Editor
+# ======================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ======================
+# OS files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Texts
+# ======================
