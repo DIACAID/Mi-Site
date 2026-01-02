@@ -32,7 +32,7 @@
         <div class="profile__description">
             <p class="description">
                 <span class="profile-way">
-                    Full Stack Web Developer<br>
+                    Full Stack Developer and Data Engineer<br>
                 </span>
                 Enfoque para brindar calidad, escalabilidad y mantenibilidad en aplicaciones web. <br>
                 <span class="profile-learn">
@@ -47,9 +47,12 @@
         <div class="proyects">
             {% for card in cards %}
             <div class="card">
-                <img src="#" alt="{{ card.title }}">
+                <img src="{% static 'diacdev_app/images/'|add:card.image %}" data-fallback="{% static 'diacdev_app/images/default-card.png' %}"
+                    onerror="this.onerror=null; this.src=this.dataset.fallback" alt="{{ card.title }}">
                 <h3>{{ card.title }}</h3>
-                <p>{{ card.text }}</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+                    odit deleniti, facere ad nam quasi tempora iste dicta sint quae quisquam
+                    officia vero totam consequuntur debitis? Expedita corporis reiciendis qui!</p>
             </div>
             {% endfor %}
         </div>
@@ -59,87 +62,103 @@
         <h2>Habilidades</h2>
         <div class="skills">
             <div class="skill__backend">
-                <h3>Backend</h3>
+                <h3 class="skill__way">Backend</h3>
                 <div class="skill__icons">
-
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1" />
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/django.png" alt="django" />
+                        <h3>Django</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/ios-filled/50/api-settings.png" alt="api-settings" />
+                        <h3>REST APIs</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/external-basicons-solid-edtgraphics/50/external-safe-safe-and-security-basicons-solid-edtgraphics-5.png"
+                            alt="external-safe-safe-and-security-basicons-solid-edtgraphics-5" />
+                        <h3>JWT Auth</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-color-tal-revivo.png"
+                            alt="external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-color-tal-revivo" />
+                        <h3>PostgreSQL</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/fluency/48/sql.png" alt="sql" />
+                        <h3>SQL</h3>
+                    </div>
                 </div>
             </div>
             <div class="skill__frontend">
-                <h3>Frontend</h3>
+                <h3 class="skill__way">Frontend</h3>
                 <div class="skill__icons">
                     <div class="skill">
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png"
-                            alt="html-5--v1" />
+                        <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" />
                         <h3>HTML</h3>
                     </div>
                     <div class="skill">
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png"
-                            alt="javascript--v1" />
+                        <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1" />
                         <h3>JavaScript</h3>
                     </div>
                     <div class="skill">
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3" />
+                        <img src="https://img.icons8.com/color/48/css3.png" alt="css3" />
                         <h3>CSS</h3>
                     </div>
                 </div>
             </div>
             <div class="skill__tools">
-                <h3>Herramientas</h3>
+                <h3 class="skill__way">Herramientas</h3>
                 <div class="skill__icons">
-                    
-                    <p>
-                        vscode, git, giuhub </p>
+
                     <div class="skill">
-                        <img width="48" height="48" src="https://img.icons8.com/fluency/48/visual-studio-code-2019.png"
-                        alt="visual-studio-code-2019" />
+                        <img src="https://img.icons8.com/fluency/48/visual-studio-code-2019.png"
+                            alt="visual-studio-code-2019" />
                         <h3>VS Code</h3>
-                    </div><div class="skill">
-
-                        <h3></h3>
-                    </div><div class="skill">
-
-                        <h3></h3>
-                    </div><div class="skill">
-
-                        <h3></h3>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/git.png" alt="git" />
+                        <h3>Git</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/fluency/48/github.png" alt="github" />
+                        <h3>GitHub</h3>
                     </div>
                 </div>
             </div>
-            <div class="skill_learn">
-                <h3>Aprendiendo</h3>
+            <div class="skill__learn">
+                <h3 class="skill__way">Aprendiendo</h3>
                 <div class="skill__icons">
-                    <p>
-                        docker, typescript, nginx, apache, tailwindcss, react.js
-                    </p>
-
                     <div class="skill">
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/typescript.png" alt="typescript"/>
-                        <h3>TypeCript</h3>
+                        <img src="https://img.icons8.com/color/48/typescript.png" alt="typescript" />
+                        <h3>TypeScript</h3>
                     </div>
                     <div class="skill">
-                        <img width="48" height="48" src="https://img.icons8.com/fluency/48/docker.png" alt="docker" />
+                        <img src="https://img.icons8.com/fluency/48/docker.png" alt="docker" />
                         <h3>Docker</h3>
                     </div>
                     <div class="skill">
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>
+                        <img src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css" />
                         <h3>Tailwindcss</h3>
                     </div>
                     <div class="skill">
-                        <img width="40" height="40" src="https://img.icons8.com/office/40/react.png" alt="react"/>
+                        <img src="https://img.icons8.com/office/40/react.png" alt="react" />
                         <h3>React.js</h3>
                     </div>
                     <div class="skill">
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/nodejs.png" alt="nodejs"/>
+                        <img src="https://img.icons8.com/color/48/nodejs.png" alt="nodejs" />
                         <h3>Node.js</h3>
                     </div>
                     <div class="skill">
-                        <img width="24" height="24" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/external-apache-a-free-and-open-source-cross-platform-web-server-software-logo-shadow-tal-revivo.png"
-                        alt="apache"/>
+                        <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/external-apache-a-free-and-open-source-cross-platform-web-server-software-logo-shadow-tal-revivo.png"
+                            alt="apache" />
                         <h3>Apache</h3>
                     </div>
                     <div class="skill">
-
-                        <h3></h3>
+                        <img src="https://img.icons8.com/color/48/nginx.png" alt="nginx" />
+                        <h3>NGINX</h3>
                     </div>
                     <div class="skill">
 
